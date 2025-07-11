@@ -5,20 +5,28 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import ServicePlatformDashboard from '@/views/ServicePlatformDashboard.vue'
 import AboutPage from '@/views/AboutPage.vue'
 import LandingPage from '@/views/LandingPage.vue'
+import DialectLearning from '@/views/DialectLearning.vue'
+
+const prefix = process.env.NODE_ENV === 'production' ? '/my-vue3-cesium' : ''
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/service-platform-dashboard',
+    path: `${prefix}/dialect-learning`,
+    name: 'DialectLearning',
+    component: DialectLearning
+  },
+  {
+    path: `${prefix}/service-platform-dashboard`,
     name: 'ServicePlatformDashboard',
     component: ServicePlatformDashboard
   },
   {
-    path: '/about',
+    path: `${prefix}/about`,
     name: 'About',
     component: AboutPage
   },
   {
-    path: '/',
+    path: `${prefix}/`,
     name: 'Landing',
     component: LandingPage
   }

@@ -2,8 +2,13 @@
   <div class="background">
     <div class="overlay" />
     <div class="center-buttons">
-      <router-link to="/service-platform-dashboard" class="nav-button">某某服务平台大屏</router-link>
-      <router-link to="/" class="nav-button">开发中</router-link>
+      <router-link :to="{ name: 'ServicePlatformDashboard' }" class="nav-button">
+        某某服务平台大屏
+      </router-link>
+      <router-link :to="{ name: 'DialectLearning' }" class="nav-button"
+        >方言学习</router-link
+      >
+      <router-link :to="{ name: 'Landing' }" class="nav-button">开发中</router-link>
     </div>
   </div>
 </template>
@@ -16,7 +21,7 @@
 .background {
   position: relative;
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;

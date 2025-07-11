@@ -2,18 +2,19 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 // 引入页面组件（路径按你自己的文件结构调整）
+import LandingPage from '@/views/LandingPage.vue' 
 import ServicePlatformDashboard from '@/views/ServicePlatformDashboard.vue'
 import AboutPage from '@/views/AboutPage.vue'
-import LandingPage from '@/views/LandingPage.vue'
-import DialectLearning from '@/views/DialectLearning.vue'
+import LoginPage from '@/views/LoginPage.vue'
+
 
 const prefix = process.env.NODE_ENV === 'production' ? '/my-vue3-cesium' : ''
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: `${prefix}/dialect-learning`,
-    name: 'DialectLearning',
-    component: DialectLearning
+    path: `${prefix}/login`,
+    name: 'LoginPage',
+    component: LoginPage
   },
   {
     path: `${prefix}/service-platform-dashboard`,

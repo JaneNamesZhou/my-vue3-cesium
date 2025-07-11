@@ -2,12 +2,9 @@
   <div class="background">
     <div class="overlay" />
     <div class="center-buttons">
-      <router-link :to="{ name: 'ServicePlatformDashboard' }" class="nav-button">
+      <router-link :to="{ name: 'LoginPage' }" class="nav-button">
         某某服务平台大屏
-      </router-link>
-      <router-link :to="{ name: 'DialectLearning' }" class="nav-button"
-        >方言学习</router-link
-      >
+      </router-link> 
       <router-link :to="{ name: 'Landing' }" class="nav-button">开发中</router-link>
     </div>
   </div>

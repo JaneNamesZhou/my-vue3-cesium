@@ -9,6 +9,7 @@
     "deploy": "vue-cli-service build & gh-pages -d dist"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "cesium": "^1.130.1-splats.0",
     "core-js": "^3.8.3",
     "marked": "^16.0.0",

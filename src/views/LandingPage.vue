@@ -4,8 +4,8 @@
     <div class="center-buttons">
       <router-link :to="{ name: 'LoginPage' }" class="nav-button">
         某某服务平台大屏
-      </router-link> 
-      <router-link :to="{ name: 'Landing' }" class="nav-button">开发中</router-link>
+      </router-link>
+      <router-link :to="{ name: 'DocsLayout' }" class="nav-button">文档说明</router-link>
     </div>
   </div>
 </template>

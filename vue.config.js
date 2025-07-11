@@ -10,5 +10,13 @@ module.exports = defineConfig({
         'process.env': JSON.stringify(process.env)
       })
     ]
+  },
+  chainWebpack: config => {
+    config.module
+      .rule('md')
+      .test(/\.md$/)
+      .use('raw-loader')
+      .loader('raw-loader')
+      .end()
   }
 })

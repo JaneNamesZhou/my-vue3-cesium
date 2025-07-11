@@ -21,6 +21,8 @@ const route = useRoute();
 const menuOptions = [
 //   { label: "简介", key: "intro" },
   { label: "大屏系统说明", key: "dashboardIntro" },
+  { label: "Cesium优化", key: "cesiumOptimize" },
+  { label: "待实现功能", key: "toDo" }, 
 ];
 
 const activeKey = ref(route.params.page || "intro");

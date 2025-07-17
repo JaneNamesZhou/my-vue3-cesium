@@ -5,8 +5,14 @@
       <router-link :to="{ name: 'LoginPage' }" class="nav-button">
         某某服务平台大屏
       </router-link>
+      <router-link :to="{ name: 'ThreeJSPage' }" class="nav-button">
+        三维场景  Three.js 
+      </router-link>
       <router-link :to="{ name: 'GeocodingPage' }" class="nav-button">
         地理编码
+      </router-link>
+      <router-link :to="{ name: 'OutdoorActivitiesPage' }" class="nav-button">
+        户外地图
       </router-link>
       <router-link :to="{ name: 'DocsLayout' }" class="nav-button">文档说明</router-link>
     </div>

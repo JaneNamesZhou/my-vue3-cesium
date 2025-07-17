@@ -7,10 +7,22 @@ import ServicePlatformDashboard from '@/views/ServicePlatformDashboard.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import DocsLayout from '@/views/DocsLayout.vue'
 import GeocodingPage from '@/views/GeocodingPage.vue'
+import OutdoorActivitiesPage from '@/views/OutdoorActivitiesPage.vue'
+import ThreeJSPage from '@/views/ThreeJSPage.vue'
 
 const prefix = process.env.NODE_ENV === 'production' ? '/my-vue3-cesium' : ''
 
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: `${prefix}/threejs`,
+    name: 'ThreeJSPage',
+    component: ThreeJSPage 
+  },
+  {
+    path: `${prefix}/outdoor-activities`,
+    name: 'OutdoorActivitiesPage',
+    component: OutdoorActivitiesPage 
+  },
   {
     path: `${prefix}/geocoding`,
     name: 'GeocodingPage',
